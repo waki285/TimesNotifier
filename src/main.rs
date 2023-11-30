@@ -39,6 +39,7 @@ impl EventHandler for Handler {
                 let last_message_id = time.last_message_id;
                 if last_message_id.is_none() {
                     log::debug!("{} has no messages", time.name);
+                    continue;
                 }
                 let last_message_id = last_message_id.unwrap();
                 //let last_message = time.message(&ctx.http, last_message_id).await.unwrap();
