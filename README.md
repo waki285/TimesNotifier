@@ -1,0 +1,2 @@
+# TimesNotifier
+timesに3日以上投稿されてない場合に通知するbot
